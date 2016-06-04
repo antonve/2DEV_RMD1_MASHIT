@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+/******************************************************
+** GENERAL
+******************************************************/
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+body
+{
+    font-size: 100%;
+    font-family: 'PT Sans', Arial, Arial, Helvetica, sans-serif;
+    background: center top #a7261f url('../images/bg.jpg') no-repeat;
+}
+
+a
+{
+    color: #e55a57;
+}
+
+h1
+{
+    color: #e55a57;
+    font: bold 1.9em Arial, Arial, Helvetica, sans-serif;
+    font: 2em 'PTSansBold';
+    margin: 0 0 .3em;
+}
+
+/******************************************************
+** ELEMENTS
+******************************************************/
+
+#container
+{
+    width: 600px;
+    margin: 50px auto;
+    border: 1px solid #e66563;
+    background: black url('../images/noise.png') repeat;
+}
+
+#gotocontent
+{
+    display: none;
+}
+
+#header
+{
+    height: 134px;
+    background: url('../images/header.png') repeat-x;
+}
+
+#content
+{
+    padding: 15px;
+    color: #e5e5e5;
+}
+
+
+/******************************************************
+** HELPERS
+******************************************************/
+
+.hide
+{
+    display: none;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+    overflow: visible;
+}

@@ -1,0 +1,511 @@
+@charset "UTF-8";
+
+/******************************************************
+** GENERAL
+******************************************************/
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+body
+{
+    font-size: 100%;
+    font-family: 'PT Sans', Arial, Arial, Helvetica, sans-serif;
+    background: center top #a7261f url('../images/bg.jpg') no-repeat;
+}
+
+a img
+{
+    border: none;
+}
+
+a
+{
+    color: #e55a57;
+}
+
+h1
+{
+    color: #e55a57;
+    font: bold 1.9em Arial, Arial, Helvetica, sans-serif;
+    font: 2em 'PTSansBold';
+    margin: 0 0 .3em;
+}
+
+h2
+{
+    color: #fff;
+    font: bold 1.6em Arial, Arial, Helvetica, sans-serif;
+    font: 1.7em 'PTSansBold';
+    margin: 1em 0 .3em;
+}
+
+/******************************************************
+** FORMS
+******************************************************/
+
+legend
+{
+    display: none;
+}
+
+fieldset
+{
+    border: none;
+}
+
+::-webkit-input-placeholder
+{
+    color: #737373;
+}
+:-moz-placeholder
+{
+    color: #737373;
+}
+:-ms-input-placeholder
+{
+    color: #737373;
+}
+
+input[type="text"], input[type="password"], input[type="submit"]
+{
+    background: #000;
+    background: rgba(0,0,0,.2);
+    border: 1px solid #0e0e0e;
+    border: 1px solid rgba(0,0,0,1);
+    width: 172px;
+    height: 11px;
+    padding: 10px 8px;
+    margin-bottom: 3px;
+    color: #a5a5a5;
+    -moz-box-shadow:    inset 0 0 1px #2d2d2d;
+    -webkit-box-shadow: inset 0 0 1px #2d2d2d;
+    box-shadow:         inset 0 0 1px #2d2d2d;
+}
+
+input[type="submit"]
+{
+    background: #000;
+    background: rgba(0,0,0,.7);
+    height: 40px;
+    padding: 0;
+}
+
+input[type="submit"]:hover
+{
+    background: #000;
+    background: rgba(0,0,0,.4);
+    -webkit-transition: background 0.2s ease-in-out;
+    -moz-transition: background 0.2s ease-in-out;
+    -ms-transition: background 0.2s ease-in-out;
+    -o-transition: background 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out;
+}
+
+input:focus
+{
+    background: #000;
+    background: rgba(0,0,0,.3);
+    outline: none;
+    border: 3px solid black;
+    padding: 8px 6px;
+    -webkit-transition: background 0.2s ease-in-out;
+    -moz-transition: background 0.2s ease-in-out;
+    -ms-transition: background 0.2s ease-in-out;
+    -o-transition: background 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out;
+}
+
+form fieldset input
+{
+    float: left;
+}
+
+form div.error
+{
+    float: left;
+    color: #e55a57;
+    margin-left: 10px;
+    line-height: 33px;
+}
+
+form div.error+br, form  fieldset input+br
+{
+    clear: both;
+}
+
+/******************************************************
+** ELEMENTS
+******************************************************/
+
+#container
+{
+    width: 938px;
+    margin: 50px auto;
+    border: 1px solid #e66563;
+    background: black url('../images/noise.png') repeat;
+}
+
+#gotocontent
+{
+    display: none;
+}
+
+header
+{
+    height: 134px;
+    background: url('../images/header.png') repeat-x;
+    overflow: auto;
+    overflow-y: hidden;
+}
+
+#content
+{
+    clear: both;
+    padding: 15px;
+    color: #e5e5e5;
+}
+
+#menu
+{
+    list-style-type: none;
+    float: left;
+    line-height: 134px;
+}
+
+#menu li
+{
+    float: left;
+    margin-right: 20px;
+}
+
+#menu a
+{
+    font: bold 1.3em Arial, Arial, Helvetica, sans-serif;
+    font: 1.4em 'PTSansBold';
+    color #e55a57;
+    text-decoration: none;
+}
+
+#menu a.current, #menu a:hover
+{
+    text-decoration: underline;
+}
+
+#logo
+{
+    text-indent: -90000px;
+    width: 211px;
+    height: 59px;
+    margin: 37px 40px 0 20px;
+    float: left;
+    background: url('../images/logo.png');
+}
+
+#userpanel
+{
+    float: right;
+    padding: 10px;
+    color: white;
+}
+
+#userpanel form
+{
+    height: 105px;
+    width: 190px;
+}
+
+#userpanel .remember_me
+{
+    float: left;
+    width: 115px;
+    color: #ffffff;
+    font-size: .8em;
+    margin-top: 2px;
+}
+
+#userpanel form a
+{
+    display: block;
+    margin-top:4px;
+    font: italic .95em Arial, Arial, Helvetica, sans-serif;
+    font: 1em 'PTSansItalic';
+}
+
+#userpanel input[type="checkbox"] {
+    margin: 2px;
+}
+
+.login input[type="submit"]
+{
+    width: 70px;
+    float: right;
+}
+
+#login-page .remember_me
+{
+    margin: 5px 0;
+}
+
+#login-page input[type="checkbox"] {
+    margin: 4px;
+}
+
+#register-page label, #register-page label+br, #search label
+{
+    display: none;
+}
+
+#register-page input[type="submit"], #login-page input[type="submit"], #reset-page input[type="submit"]
+{
+    width: 190px;
+}
+
+#search input[type="text"]
+{
+    height: 18px;
+    width: 718px;
+}
+
+#search_results
+{
+    margin-top: 20px;
+}
+
+#search-results-container ul, #events ul, #my-concerts ul, #event-page ul
+{
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+#search-results-container ul > li, #events ul > li, #video .not_found, #my-concerts ul > li, #event-page ul > li
+{
+    margin-top: 3px;
+    padding: 10px;
+    background: #000;
+    background: rgba(0,0,0,.3);
+    font-style: italic;
+    color: white;
+    word-wrap: break-word;
+}
+
+#search-results-container ul > li a, #events ul > li a, #my-concerts ul > li a, #event-page ul > li a
+{
+    display: block;
+    text-decoration: none;
+}
+
+#search-results-container ul > li a:hover, #events ul > li a:hover, #my-concerts ul > li a:hover, #event-page ul > li a:hover
+{
+    text-decoration: underline;
+}
+
+#events ul > li, #my-concerts ul > li
+{
+    overflow: auto;
+}
+
+#lineup ul
+{
+    margin-bottom: 10px;
+}
+
+#events .event
+{
+    float: left;
+    width: 370px;
+}
+
+#my-concerts .event
+{
+    float: left;
+    width: 800px;
+}
+
+#events .add
+{
+    float: right;
+    width: 50px;
+    line-height: 40px;
+}
+
+#my-concerts .remove
+{
+    float: right;
+    width: 80px;
+    text-align: right;
+}
+
+#maps
+{
+    width: 444px;
+    height: 444px;
+}
+
+#artist-page
+{
+    overflow: auto;
+}
+
+#artist-page #bio
+{
+    display: none;
+}
+
+#gallery ul
+{
+    list-style-type: none;
+    overflow: auto;
+}
+
+#gallery ul li
+{
+    float: left;
+    margin-right: 8px;
+    width: 221px;
+    height: 221px;
+    overflow: hidden;
+}
+
+#gallery .not_found
+{
+    height: 20px;
+}
+
+#gallery ul li:last-child
+{
+    margin-right: 0;
+}
+
+#event-page
+{
+    overflow: auto;
+}
+
+#events, #lineup
+{
+    width: 444px;
+    float: left;
+}
+
+#video, #location
+{
+    width: 444px;
+    float: right;
+}
+
+#error500
+{
+    color: white;
+}
+
+#error500 > ul
+{
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+#error500 > ul > li
+{
+    margin-top: 10px;
+    padding: 10px;
+    background: #e55a57;
+    font-style: italic;
+    color: white;
+    word-wrap: break-word;
+}
+
+.loader
+{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: center url('../images/loader.gif') no-repeat,rgba(0,0,0,.7);
+    text-align:center;
+}
+
+#lightbox
+{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: #000;
+    background: rgba(0,0,0,.7);
+    text-align:center;
+}
+
+#lb_content
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+
+#lightbox img
+{
+    box-shadow:0 0 25px #111;
+    -webkit-box-shadow:0 0 25px #111;
+    -moz-box-shadow:0 0 25px #111;
+    max-width:940px;
+}
+
+#lightbox p
+{
+    text-align:right;
+    color:#fff;
+    margin-right:20px;
+    font-size:12px;
+}
+
+/******************************************************
+** HELPERS
+******************************************************/
+
+.hide 
+{
+    display: none;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+    overflow: visible;
+}
+
+.debug_trace
+{
+    color: #000;
+    color: rgba(255,255,255,.9);
+    background: #000;
+    background: rgba(0,0,0,.9);
+    padding: 25px;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    position: absolute;
+    top: 0;
+    word-wrap: break-word;
+    width: 100%;
+    box-sizing: border-box;
+}
